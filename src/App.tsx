@@ -3,6 +3,7 @@
 // HeaderHerader
 // ExmploDeComponentes
 import { Fragment } from 'react/jsx-runtime';
+import { Heading } from './components/Heading';
 import './styles/theme.css';
 import './styles/global.css';
 
@@ -10,7 +11,7 @@ export function App() {
   console.log('App renderizou');
   return (
     <Fragment>
-      <h1>Ola, mundo! (do App)</h1>
+      <Heading />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quia
         voluptatibus et magni ducimus? Illo soluta molestias provident quibusdam
