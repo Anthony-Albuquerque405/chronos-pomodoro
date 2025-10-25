@@ -3,12 +3,14 @@
 // HeaderHerader
 // ExmploDeComponentes
 import { Fragment } from 'react/jsx-runtime';
+import './styles/theme.css';
+import './styles/global.css';
 
 export function App() {
   console.log('App renderizou');
   return (
     <Fragment>
-      <h1>Ola, mundo! (do App)</h1>;
+      <h1>Ola, mundo! (do App)</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quia
         voluptatibus et magni ducimus? Illo soluta molestias provident quibusdam
