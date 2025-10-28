@@ -6,16 +6,17 @@ import { Fragment } from 'react/jsx-runtime';
 import { Heading } from './components/Heading';
 import './styles/theme.css';
 import './styles/global.css';
+import { TimerIcon } from 'lucide-react';
 
 export function App() {
-  console.log('App renderizou');
   return (
     <Fragment>
-      <Heading attr={123} attr2='String'>
+      <Heading>
         Olá Mundo 1
+        <button>
+          <TimerIcon />
+        </button>
       </Heading>
-      <Heading> Olá Mundo 2</Heading>
-      <Heading> Olá Mundo 3</Heading>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quia
         voluptatibus et magni ducimus? Illo soluta molestias provident quibusdam
