@@ -3,16 +3,18 @@
 // HeaderHerader
 // ExmploDeComponentes
 import { Fragment } from 'react/jsx-runtime';
-import './styles/theme.css';
-import './styles/global.css';
 import { Heading } from './components/Heading';
 import { Conteiner } from './components/Conteiner';
+import { Logo } from './components/Logo';
+
+import './styles/theme.css';
+import './styles/global.css';
 
 export function App() {
   return (
     <Fragment>
       <Conteiner>
-        <Heading>LOGO</Heading>
+        <Logo></Logo>
       </Conteiner>
 
       <Conteiner>
