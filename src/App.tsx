@@ -6,10 +6,11 @@ import { Fragment } from 'react/jsx-runtime';
 import { Conteiner } from './components/Conteiner';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
+import { CountDown } from './components/CountDown';
+import { DefaultInput } from './components/DefaultInput';
 
 import './styles/theme.css';
 import './styles/global.css';
-import { CountDown } from './components/CountDown';
 
 export function App() {
   return (
@@ -29,8 +30,15 @@ export function App() {
       <Conteiner>
         <form className='form' action=''>
           <div className='formRow'>
-            <label htmlFor='meuInput'>task</label>
-            <input id='meuInput' type='text' />
+            <DefaultInput
+              labelText='task'
+              id='meuInput'
+              type='text'
+              title='TITULO'
+              placeholder='Digite algo'
+              disabled
+              defaultValue='valor preenchido'
+            ></DefaultInput>
           </div>
 
           <div className='formRow'>
