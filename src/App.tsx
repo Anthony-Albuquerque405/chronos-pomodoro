@@ -36,8 +36,6 @@ export function App() {
               type='text'
               title='TITULO'
               placeholder='Digite algo'
-              disabled
-              defaultValue='valor preenchido'
             ></DefaultInput>
           </div>
 
