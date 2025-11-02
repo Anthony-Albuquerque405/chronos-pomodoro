@@ -3,9 +3,9 @@
 // HeaderHerader
 // ExmploDeComponentes
 import { Fragment } from 'react/jsx-runtime';
-import { Heading } from './components/Heading';
 import { Conteiner } from './components/Conteiner';
 import { Logo } from './components/Logo';
+import { Menu } from './components/Menu';
 
 import './styles/theme.css';
 import './styles/global.css';
@@ -18,7 +18,7 @@ export function App() {
       </Conteiner>
 
       <Conteiner>
-        <Heading>MENU</Heading>
+        <Menu></Menu>
       </Conteiner>
     </Fragment>
   );
