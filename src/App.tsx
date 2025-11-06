@@ -1,7 +1,7 @@
 //PascalCase
 // App
 // HeaderHerader
-// ExmploDeComponentes
+
 import { Fragment } from 'react/jsx-runtime';
 import { Conteiner } from './components/Conteiner';
 import { Logo } from './components/Logo';
@@ -15,25 +15,10 @@ import { PlayCircleIcon } from 'lucide-react';
 
 import './styles/theme.css';
 import './styles/global.css';
-import { Heading } from './components/Heading';
 
 export function App() {
-  let numero = 0;
-
-  function handleClick() {
-    const span = document.getElementById('numero');
-    if (!span) return;
-    numero += 1;
-    span.innerText = numero.toString();
-    console.log(numero, Date.now());
-  }
   return (
     <Fragment>
-      <Heading>
-        Numero: <span id='numero'>{numero}</span>
-      </Heading>
-      <button onClick={handleClick}>Aumenta</button>
-
       <Conteiner>
         <Logo></Logo>
       </Conteiner>
@@ -50,7 +35,7 @@ export function App() {
         <form className='form' action=''>
           <div className='formRow'>
             <DefaultInput
-              labelText={numero.toString()}
+              labelText='task'
               id='meuInput'
               type='text'
               title='TITULO'
