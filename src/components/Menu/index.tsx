@@ -12,10 +12,9 @@ export function Menu() {
   ) {
     event.preventDefault();
 
-    console.log('Clicado', Date.now());
-
     setTheme(prevTheme => {
       const nextTheme = prevTheme === 'dark' ? 'light' : 'dark';
+
       return nextTheme;
     });
 
@@ -23,16 +22,13 @@ export function Menu() {
   }
 
   useEffect(() => {
-    console.log('useEffect', Date.now());
-  }); // ele é executado toda vez que o componente renderiza
+    console.log('Tema alterado para:', theme, Date.now());
+    document.documentElement.setAttribute('data-theme', theme);
 
-  // useEffect(() => {
-  //   console.log('', Date.now());
-  // }, []);
-
-  // useEffect(() => {
-  //   console.log('', Date.now());
-  // }, [theme]);
+    return () => {
+      console.log('olha esse componente sera atualizado');
+    };
+  }, [theme]); // Atualiza o atributo data-theme sempre que o tema mudar
 
   return (
     <nav className={styles.menu}>
