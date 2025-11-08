@@ -1,11 +1,11 @@
 import type { TaskModel } from './TaskModels';
 
 export type TaskStateModel = {
-  tasks: TaskModel[];
-  secondsRemaining: number; // segundos restantes na contagem regressiva
-  formattedSecondsRaemining: string; // segundos restantes formatados como string MM:SS
-  activeTask: TaskModel | null;
-  currentCycle: number; // ciclo atual do pomodoro
+  tasks: TaskModel[]; // historico, MainForm
+  secondsRemaining: number; // Countdown, Historico, MainForm, Button
+  formattedSecondsRaemining: string; // Countdown, Titulo da aplicação
+  activeTask: TaskModel | null; // Countdown, Historico, MainForm, Button
+  currentCycle: number; // Home
 
   config: {
     workTime: number; // duração do tempo de trabalho em minutos

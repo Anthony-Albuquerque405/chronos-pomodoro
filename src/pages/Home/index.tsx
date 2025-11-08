@@ -9,6 +9,7 @@ export function Home() {
       <Conteiner>
         <CountDown></CountDown>
       </Conteiner>
+
       <Conteiner>
         <MainForm></MainForm>
       </Conteiner>
